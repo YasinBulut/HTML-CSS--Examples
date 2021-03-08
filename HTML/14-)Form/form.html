@@ -6,22 +6,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GİRİŞ</title>
+    <style>
+    input {
+        border: none;
+        border-bottom: 2px solid red;
+      }
+
+      .btn {
+	background-color: white;
+	border: 2px solid #09F;
+	border-radius:8px;
+	color: #09F;
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 12pt;
+	font-family:Verdana;
+	margin: 4px 2px;
+	transition:all 0.4s;	
+	-webkit-transition:all 0.4s;
+	-moz-transition:all 0.4s;
+	-o-transition:all 0.4s;
+}
+    </style>
+
 </head>
 
 <body>
     <form action="">
-        <div>
-            <label> Adınız:</label>
-            <input type="text" name="text" id="ad" placeholder="Adınızı girin">
-            <br><br>
-            <label>Şifreniz:</label>
-            <input type="password" name="text" id="sifre" placeholder="Adınızı girin">
-            <br><br>
-            <input type="radio" name="gender" value="Erkek">Erkek
-            <input type="radio" name="gender" value="Kadın">Kadın
-            <br><br>
-            <input type="submit" value="Giriş">
-        </div>
+        <table>
+
+            <div style="margin-left:300px; margin-top:250px;">
+                <label> Adınız:</label>
+                <input type="text" name="text" id="ad" placeholder="Adınızı girin">
+                <br><br>
+                <label>Şifreniz:</label>
+                <input type="password" name="text" id="sifre" placeholder="Şifrenizi girin">
+                <br><br>
+                <input type="radio" name="gender" value="Erkek">Erkek
+                <input type="radio" name="gender" value="Kadın">Kadın
+                <br><br>
+                <button class="btn" type="button" name="btn">Giriş</button>
+            </div>
+
+        </table>
 
     </form>
 </body>
